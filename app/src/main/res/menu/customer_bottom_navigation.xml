@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/userhome"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/tdsearch"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"/>
+    <item
+        android:id="@+id/usercart"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"/>
+</menu>

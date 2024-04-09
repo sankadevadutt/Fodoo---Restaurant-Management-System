@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".userproductdisp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <Spinner
+            android:id="@+id/spinnerquant"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#000000"
+            android:gravity="center"
+            android:hapticFeedbackEnabled="false"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/Dishame"
+            app:layout_constraintStart_toStartOf="@+id/Dishame"
+            app:layout_constraintTop_toBottomOf="@+id/value" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Restaurant Name"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descbod" />
+
+        <TextView
+            android:id="@+id/descbod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tasty Burger"
+            android:textColor="#373636"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/deschead"
+            app:layout_constraintTop_toBottomOf="@+id/deschead" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Contact details"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Restname" />
+
+        <TextView
+            android:id="@+id/conta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="9908747859"
+            android:textColor="#373636"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/deschead"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <ImageView
+            android:id="@+id/ivbac4"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back_black" />
+
+        <ImageButton
+            android:id="@+id/disp"
+            android:layout_width="190dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/camerashapebtn"
+            android:src="@drawable/ham"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivbac4" />
+
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00BCD4"
+            android:text="Add to cart"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conta" />
+
+        <TextView
+            android:id="@+id/Dishame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="HamBurger"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="@+id/disp"
+            app:layout_constraintStart_toStartOf="@+id/disp"
+            app:layout_constraintTop_toBottomOf="@+id/disp" />
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Rs 280"
+            android:textColor="#6A6767"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/Dishame"
+            app:layout_constraintStart_toStartOf="@+id/Dishame"
+            app:layout_constraintTop_toBottomOf="@+id/Dishame" />
+
+        <TextView
+            android:id="@+id/deschead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerquant" />
+
+        <TextView
+            android:id="@+id/Restname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hotel grand"
+            android:textColor="#373636"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/deschead"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
